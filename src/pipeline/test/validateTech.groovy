@@ -4,11 +4,11 @@ package pipeline.test
 def get() {
    def tech = ['ms', 'front', 'bff']
 	def repo = env.GIT_URL //.getUserRemoteConfigs()[0].getUrl().tokenize('/').last().split("\\.")[0]
-	println "Repo: ${repo}"
+	//println "Repo: ${repo}"
 
 	for (item in tech) {
-		println "Item: ${item}"
-    		if (repo.contains(item)) {
+		//println "Item: ${item}"
+    	if (repo.contains(item)) {
 			return item
 		}
 	}

@@ -8,7 +8,8 @@ def call() {
                 steps {
                     script {
 						def tech = new test.validateTech()
-						println 'Tecnologia: ' + tech.get()
+                        
+                        figlet 'Tecnologia: ' + tech.get()
 						
                         def branchName = validate.getBranchName()
 
